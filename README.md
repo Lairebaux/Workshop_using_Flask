@@ -1,1 +1,1 @@
-### This is the python version of the Workshop_Express repo.
+### This is the Flask version of the Workshop_Express repo.
