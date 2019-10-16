@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<form class="login-form" action="/signup" method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+
+    <div class="img-container">
+        <img src="static/images/default.jpg" class="avatar">
+    </div>
+
+    <div class="container">
+        <p>
+            {{ form.username.label }}
+            {{ form.username(class="css_class") }}
+        </p>
+        {{ form.password.label }}
+        {{ form.password(class="css_class") }}
+
+
+        {{ form.signup_btn(class="btn", id="sg-btn") }}
+
+        <p>
+            {{ form.cancel_btn(class="btn", id="cancel-btn") }}
+        </p>
+    </div>
+</form>
+
+
+{% endblock %}

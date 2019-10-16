@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title%}Images{% endblock%}
+
+{% block body %}
+
+    <h1>Upload Image</h1>
+    <div>
+        <form action="/upload-images" method="POST" enctype="multipart/form-data"></form>
+        {{ form.hidden_tag() }}
+
+        <input type="file" name="image" class="btn" id="browse-btn">
+
+        {{ form.upload_img_btn(class="btn", id="upload-img-btn") }}
+    </div>
+
+{% endblock %}

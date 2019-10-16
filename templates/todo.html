@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<h2>Enter a title and items</h2>
+
+<div>
+        {{ items[0].title }}
+
+</div>
+
+<p>
+<form action="/title" method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+
+        <p>
+            {{ form.title.label }}
+            {{ form.title() }}
+            {{ form.title_btn() }}
+        </p>
+</form>
+</p>
+    <p>
+    <form action="/list" method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+
+        {{ form.todo_items.label }}
+        {{ form.todo_items }}
+        {{ form.todo_items_btn() }}
+
+    </form>
+</p>
+    <form action="/delete" method="POST" enctype="multipart/form-data">
+       {{ form.delete_btn () }}
+    </form>
+
+<ul>
+    {% for i in items[0].things %}
+    <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

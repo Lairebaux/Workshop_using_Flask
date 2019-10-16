@@ -1,0 +1,146 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+#lg-home-btn, #sg-home-btn {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+
+}
+
+#browse-btn {
+    background-color: red;
+}
+
+
+.btn > a {
+    text-decoration: none;
+}
+
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+#cancel-btn {
+    background-color: #ff3333;
+    width: 100%;
+}
+
+
+.container {
+    font-size: 18px;
+    padding: 16px;
+}
+
+
+div > h1 > a {
+    color: green;
+    text-decoration: none;
+}
+
+.cancel-btn:hover, .lg-btn:hover {
+     opacity: 0.8;
+}
+
+.header {
+    color: white;
+    margin-left: 5px;
+}
+
+.img-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/*
+input[type=text], input[type=password]{
+    border: 1px solid #ccc;
+    display: block;
+    margin: 8px 0;
+    padding: 15px;
+    width: 100%;
+}
+*/
+
+#lg-home-btn {
+    background-color: blue;
+}
+
+
+#lg-btn {
+    background-color: #66a3ff;
+}
+
+
+.login-form {
+    border: 3px solid light-gray;
+}
+
+
+.nav-container {
+    background-image: linear-gradient(to right, green, black);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.navbar {
+    list-style-type: none;
+}
+
+.navbar a {
+    color: white;
+    display: block;
+    font-size: 20px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#sg-home-btn {
+    background-color: green;
+}
+#sg-btn {
+    background-color: gray;
+}
+
+
+#upload-img-btn {
+    background-color: #b300b3;
+}
+
+
+/* Media */
+
+@media (min-width: 768px){
+    .nav-container, .navbar {
+        display: flex;
+
+    }
+    .navbar {
+        flex-direction: row;
+    }
+    .nav-container {
+        justify-content: space-between;
+    }
+    /*
+    input[type=text], input[type=password]{
+    width: auto;
+    */
+
+
+}
+
